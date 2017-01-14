@@ -247,6 +247,14 @@
     <Compile Include="Migrations\201701031443257_PopulateMoviesTable.Designer.cs">
       <DependentUpon>201701031443257_PopulateMoviesTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201701142022149_MovieValidationModelUpdate.cs" />
+    <Compile Include="Migrations\201701142022149_MovieValidationModelUpdate.Designer.cs">
+      <DependentUpon>201701142022149_MovieValidationModelUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701142028522_FixValidationOnMovies.cs" />
+    <Compile Include="Migrations\201701142028522_FixValidationOnMovies.Designer.cs">
+      <DependentUpon>201701142028522_FixValidationOnMovies.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -389,6 +397,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201701031443257_PopulateMoviesTable.resx">
       <DependentUpon>201701031443257_PopulateMoviesTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701142022149_MovieValidationModelUpdate.resx">
+      <DependentUpon>201701142022149_MovieValidationModelUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701142028522_FixValidationOnMovies.resx">
+      <DependentUpon>201701142028522_FixValidationOnMovies.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
