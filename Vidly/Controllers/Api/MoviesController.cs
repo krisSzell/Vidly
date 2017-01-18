@@ -71,7 +71,7 @@ namespace Vidly.Controllers.Api
 
             movieDto.Id = movieInDb.Id;
 
-            return Ok(Mapper.Map(movieInDb, movieDto));
+            return Ok();
         }
         
         // DELETE delete existing movie
@@ -81,12 +81,12 @@ namespace Vidly.Controllers.Api
             var movieInDb = _context.Movies.SingleOrDefault(m => m.Id == id);
 
             if (movieInDb == null)
-                return BadRequest();
+                return NotFound();
 
             _context.Movies.Remove(movieInDb);
             _context.SaveChanges();
 
-            return Ok(Mapper.Map<MovieDto, Movie>(movieInDb));
+            return Ok();
         }
     }
 }
