@@ -9,6 +9,7 @@ using Vidly.ViewModels;
 
 namespace Vidly.Controllers
 {
+    [Authorize(Roles = RoleName.CanManageMovies)]
     public class MoviesController : Controller
     {
         private ApplicationDbContext _context;
@@ -41,7 +42,7 @@ namespace Vidly.Controllers
                 return View(movie);
         }
 
-        [Authorize(Roles = RoleName.CanManageMovies)]
+       
         public ActionResult New()
         {
             var movie = new Movie();
